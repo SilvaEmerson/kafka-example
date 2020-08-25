@@ -13,7 +13,7 @@ async function producerMenssage(): Promise<void> {
     }}`,
   });
   await producer.send({
-    topic: 'prove-topic',
+    topic: 'prove.topic',
     messages: [createMessage()],
   });
 

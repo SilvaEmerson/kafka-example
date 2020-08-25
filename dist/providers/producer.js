@@ -55,7 +55,7 @@ function producerMenssage() {
                         value: "value:{data:{\n        price: " + Math.random().toPrecision(2) + ",\n        description: product\n    }}",
                     }); };
                     return [4 /*yield*/, producer.send({
-                            topic: 'prove-topic',
+                            topic: 'prove.topic',
                             messages: [createMessage()],
                         })];
                 case 2:

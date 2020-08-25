@@ -1,7 +1,7 @@
 import { Kafka } from 'kafkajs';
 
 const kafka = new Kafka({
-  clientId: 'prove-concept',
+  clientId: 'prove-server',
   brokers: ['localhost:9092'],
 });
 

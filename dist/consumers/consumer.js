@@ -48,11 +48,11 @@ function getMessage() {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    consumer = ClientKafka_1.default.consumer({ groupId: 'prove-group' });
+                    consumer = ClientKafka_1.default.consumer({ groupId: 'prove-group-client' });
                     return [4 /*yield*/, consumer.connect()];
                 case 1:
                     _a.sent();
-                    return [4 /*yield*/, consumer.subscribe({ topic: 'prove-topic', fromBeginning: true })];
+                    return [4 /*yield*/, consumer.subscribe({ topic: 'prove.topic.reply', fromBeginning: true })];
                 case 2:
                     _a.sent();
                     return [4 /*yield*/, consumer.run({
